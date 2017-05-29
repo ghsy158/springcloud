@@ -1,8 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc5d654f-8cf7-447b-bba1-0930bd008294" name="Default" comment="" />
+    <list default="true" id="dc5d654f-8cf7-447b-bba1-0930bd008294" name="Default" comment="spring cloud配置中心，并从注册中心读取配置">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service-zuul/.mvn/wrapper/maven-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service-zuul/.mvn/wrapper/maven-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service-zuul/mvnw" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service-zuul/mvnw.cmd" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-client/pom.xml" afterPath="$PROJECT_DIR$/config-client/pom.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/service-ribbon/target/" />
+    <ignored path="$PROJECT_DIR$/service-zuul/target/" />
+    <ignored path="$PROJECT_DIR$/eureka-client1/target/" />
+    <ignored path="$PROJECT_DIR$/service-feign/target/" />
+    <ignored path="$PROJECT_DIR$/eureka-server/target/" />
+    <ignored path="$PROJECT_DIR$/eureka-client2/target/" />
+    <ignored path="$PROJECT_DIR$/config-server/target/" />
+    <ignored path="$PROJECT_DIR$/config-client/target/" />
+    <ignored path="$PROJECT_DIR$/config-eureka-server/target/" />
+    <ignored path=".idea/compiler.xml" />
+    <ignored path=".idea/encodings.xml" />
+    <ignored path=".idea/kotlinc.xml" />
+    <ignored path=".idea/misc.xml" />
+    <ignored path=".idea/modules.xml" />
+    <ignored path=".idea/vcs.xml" />
+    <ignored path=".idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
+    <ignored path=".idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+    <ignored path=".idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" />
+    <ignored path=".idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_8.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_8.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_8_8.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_8_8.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" />
+    <ignored path=".idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_google_inject_guice_4_1_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_4.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_eureka_eureka_client_1_6_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_eureka_eureka_core_1_6_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_10.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_1_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_ribbon_ribbon_2_2_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_2_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_ribbon_ribbon_eureka_2_2_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_2_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_2_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_2_2.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_servo_servo_core_0_10_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_servo_servo_internal_0_10_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_netflix_zuul_zuul_core_1_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_9.xml" />
+    <ignored path=".idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
+    <ignored path=".idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+    <ignored path=".idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
+    <ignored path=".idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" />
+    <ignored path=".idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+    <ignored path=".idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" />
+    <ignored path=".idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
+    <ignored path=".idea/libraries/Maven__io_github_openfeign_feign_core_9_4_0.xml" />
+    <ignored path=".idea/libraries/Maven__io_github_openfeign_feign_hystrix_9_4_0.xml" />
+    <ignored path=".idea/libraries/Maven__io_github_openfeign_feign_slf4j_9_4_0.xml" />
+    <ignored path=".idea/libraries/Maven__io_netty_netty_buffer_4_0_27_Final.xml" />
+    <ignored path=".idea/libraries/Maven__io_netty_netty_codec_4_0_27_Final.xml" />
+    <ignored path=".idea/libraries/Maven__io_netty_netty_codec_http_4_0_27_Final.xml" />
+    <ignored path=".idea/libraries/Maven__io_netty_netty_common_4_0_27_Final.xml" />
+    <ignored path=".idea/libraries/Maven__io_netty_netty_handler_4_0_27_Final.xml" />
+    <ignored path=".idea/libraries/Maven__io_netty_netty_transport_4_0_27_Final.xml" />
+    <ignored path=".idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_0_27_Final.xml" />
+    <ignored path=".idea/libraries/Maven__io_reactivex_rxjava_1_1_10.xml" />
+    <ignored path=".idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" />
+    <ignored path=".idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" />
+    <ignored path=".idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" />
+    <ignored path=".idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
+    <ignored path=".idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+    <ignored path=".idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" />
+    <ignored path=".idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
+    <ignored path=".idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" />
+    <ignored path=".idea/libraries/Maven__junit_junit_4_12.xml" />
+    <ignored path=".idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" />
+    <ignored path=".idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" />
+    <ignored path=".idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_14.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_14.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_14.xml" />
+    <ignored path=".idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_55.xml" />
+    <ignored path=".idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_55.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_jettison_jettison_1_3_7.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_freemarker_freemarker_2_3_26_incubating.xml" />
+    <ignored path=".idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" />
+    <ignored path=".idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_5_Final.xml" />
+    <ignored path=".idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" />
+    <ignored path=".idea/libraries/Maven__org_jvnet_animal_sniffer_annotation_1_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" />
+    <ignored path=".idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_1_2_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_1_2_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_core_1_3_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_1_3_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_1_3_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_1_2_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_archaius_1_3_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_eureka_1_3_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_eureka_server_1_3_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_feign_1_3_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_ribbon_1_3_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zuul_1_3_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_security_spring_security_crypto_4_2_2_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_3_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_aop_4_3_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_beans_4_3_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_context_4_3_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_context_support_4_3_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_core_4_3_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_expression_4_3_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_test_4_3_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_web_4_3_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_webmvc_4_3_8_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
+    <ignored path=".idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
+    <ignored path=".idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" />
+    <ignored path=".idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" />
+    <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,13 +170,159 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-client/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigServerApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-server/src/main/java/fgh/springcoud/ConfigServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#446#447#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-eureka-server/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigEurekaServerApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-eureka-server/src/main/java/fgh/springcloud/ConfigEurekaServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigClientApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-client/src/main/java/fgh/springcloud/ConfigClientApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-server/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config-client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-client/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/eureka-client1/src/main/java/fgh/springcloud/SpringcloudEurekaClientApplication.java" />
+        <option value="$PROJECT_DIR$/eureka-client1/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/service-feign/src/main/java/fgh/springcloud/SchedualServiceHi.java" />
+        <option value="$PROJECT_DIR$/service-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/service-ribbon/src/main/java/fgh/springcloud/HelloService.java" />
+        <option value="$PROJECT_DIR$/service-feign/src/main/java/fgh/springcloud/SchedualServiceHiHystric.java" />
+        <option value="$PROJECT_DIR$/service-ribbon/src/main/java/fgh/springcloud/ServiceRibbonApplication.java" />
+        <option value="$PROJECT_DIR$/service-zuul/src/main/java/fgh/springcloud/ServiceZuulApplication.java" />
+        <option value="$PROJECT_DIR$/service-zuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/service-zuul/.gitignore" />
+        <option value="$PROJECT_DIR$/config-eureka-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/config-eureka-server/src/main/java/fgh/springcloud/ConfigEurekaServerApplication.java" />
+        <option value="$PROJECT_DIR$/config-client/src/main/java/fgh/springcloud/ConfigClientApplication.java" />
+        <option value="$PROJECT_DIR$/config-client/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/config-server/src/main/java/fgh/springcoud/ConfigServerApplication.java" />
+        <option value="$PROJECT_DIR$/config-client/.gitignore" />
+        <option value="$PROJECT_DIR$/springcloud-config/respo/config-client-dev.properties" />
+        <option value="$PROJECT_DIR$/config-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/config-client/pom.xml" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -33,6 +339,39 @@
         <option name="userSettingsFile" value="F:\dev\maven_repo\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="config-client" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="config-client" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_HOME" />
@@ -42,6 +381,29 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>UI Form Problems</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -58,14 +420,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springcloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config-client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="springcloud-eureka">
+            <PATH_ELEMENT USER_OBJECT="config-client">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -73,7 +461,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -82,7 +469,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="springcloud-eureka" />
+              <option name="myItemId" value="config-client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -91,16 +478,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="SearchEverywhereHistoryKey" value="config&#9;FILE&#9;file://F:/dev/workspace/springcloud/springcloud-config/respo/config-client-dev.properties&#10;pom.xml&#9;FILE&#9;file://F:/dev/workspace/springcloud/service-ribbon/pom.xml" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fgh.springcloud" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -114,7 +510,55 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ConfigClientApplication">
+    <configuration default="false" name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fgh.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fgh.springcloud.EurekaServerApplication" />
+      <module name="eureka-server" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SpringcloudEurekaClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fgh.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fgh.springcloud.SpringcloudEurekaClientApplication" />
+      <module name="eureka-client1" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SpringcloudEurekaClientApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fgh.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fgh.springcloud.SpringcloudEurekaClientApplication" />
+      <module name="eureka-client2" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ServiceFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fgh.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fgh.springcloud.ServiceFeignApplication" />
+      <module name="service-feign" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -512,9 +956,66 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="false" name="ServiceRibbonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fgh.springcloud.ServiceRibbonApplication" />
+      <module name="service-ribbon" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ServiceZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fgh.springcloud.ServiceZuulApplication" />
+      <module name="service-zuul" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fgh.springcoud.ConfigServerApplication" />
+      <module name="config-server" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConfigClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fgh.springcloud.ConfigClientApplication" />
+      <module name="config-client" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConfigEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fgh.springcloud.ConfigEurekaServerApplication" />
+      <module name="config-eureka-server" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="9">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.ServiceRibbonApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.ServiceZuulApplication" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.EurekaServerApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Spring Boot.SpringcloudEurekaClientApplication" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.SpringcloudEurekaClientApplication (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Spring Boot.ServiceFeignApplication" />
+      <item index="6" class="java.lang.String" itemvalue="Spring Boot.ConfigServerApplication" />
+      <item index="7" class="java.lang.String" itemvalue="Spring Boot.ConfigClientApplication" />
+      <item index="8" class="java.lang.String" itemvalue="Spring Boot.ConfigEurekaServerApplication" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.SpringcloudEurekaClientApplication (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Spring Boot.ServiceFeignApplication" />
+        <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringcloudEurekaClientApplication" />
+        <item index="3" class="java.lang.String" itemvalue="Spring Boot.EurekaServerApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -526,51 +1027,189 @@
       <workItem from="1495206594622" duration="251000" />
       <workItem from="1495206945884" duration="266000" />
       <workItem from="1495263690443" duration="794000" />
+      <workItem from="1495369276277" duration="1037000" />
+      <workItem from="1495375304313" duration="6358000" />
+      <workItem from="1495467681824" duration="387000" />
+      <workItem from="1495878928912" duration="311000" />
+      <workItem from="1495895970203" duration="13075000" />
     </task>
+    <task id="LOCAL-00001" summary="断路器">
+      <created>1495378449945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495378449945</updated>
+    </task>
+    <task id="LOCAL-00002" summary="断路器仪表盘 访问url：http://localhost:8764/hystrix">
+      <created>1495378856463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495378856463</updated>
+    </task>
+    <task id="LOCAL-00003" summary="zuul 路由配置">
+      <created>1495381644889</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495381644889</updated>
+    </task>
+    <task id="LOCAL-00004" summary="spring cloud config">
+      <created>1495953987150</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1495953987150</updated>
+    </task>
+    <task id="LOCAL-00005" summary="spring cloud配置中心，并从注册中心读取配置">
+      <created>1495960668442</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1495960668442</updated>
+    </task>
+    <task id="LOCAL-00006" summary="配置服务注册中心，配置文件从该注册中心读取，如果多台eureka serever部署，通过负载均衡，可以实现配置服务高可用">
+      <created>1495961547913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1495961547913</updated>
+    </task>
+    <task id="LOCAL-00007" summary="spring cloud配置中心，并从注册中心读取配置">
+      <created>1495962077504</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1495962077504</updated>
+    </task>
+    <task id="LOCAL-00008" summary="配置服务注册中心，配置文件从该注册中心读取，如果多台eureka serever部署，通过负载均衡，可以实现配置服务高可用">
+      <created>1495963366338</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1495963366338</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1311000" />
+    <option name="totallyTimeSpent" value="22479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38250428" sideWeight="0.46369138" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5351629" sideWeight="0.51437217" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6106346" sideWeight="0.53630865" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3173242" sideWeight="0.45763993" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6483705" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49399656" sideWeight="0.54236007" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/eureka-client1" />
+      <path value="$PROJECT_DIR$/springcloud-config" />
+    </ignored-roots>
+    <MESSAGE value="断路器" />
+    <MESSAGE value="断路器仪表盘 访问url：http://localhost:8764/hystrix" />
+    <MESSAGE value="zuul 路由配置" />
+    <MESSAGE value="spring cloud config" />
+    <MESSAGE value="spring cloud配置中心，并从注册中心读取配置" />
+    <MESSAGE value="配置服务注册中心，配置文件从该注册中心读取，如果多台eureka serever部署，通过负载均衡，可以实现配置服务高可用" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置服务注册中心，配置文件从该注册中心读取，如果多台eureka serever部署，通过负载均衡，可以实现配置服务高可用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -581,12 +1220,501 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/service-feign/src/main/java/fgh/springcloud/ServiceFeignApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#433#434#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-feign/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/fgh/springcloud/ServiceRibbonApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#704#705#0" expanded="false" />
+            <element signature="e#770#771#0" expanded="false" />
+            <element signature="e#823#824#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/fgh/springcloud/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#546#547#0" expanded="false" />
+            <element signature="e#598#599#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/fgh/springcloud/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#636#637#0" expanded="false" />
+            <element signature="e#699#700#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-zuul/src/main/java/fgh/springcloud/ServiceZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#464#465#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client2/src/main/java/fgh/springcloud/SpringcloudEurekaClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-feign/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-feign/src/main/java/fgh/springcloud/ServiceFeignApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#433#434#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fgh/springcloud/SpringcloudEurekaApplication.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/springcloud-eureka/pom.xml">
+    <entry file="file://$PROJECT_DIR$/springcloud-eureka/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="168">
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/huxia.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/java/fgh/springcloud/EurekaServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-feign/src/main/java/fgh/springcloud/SchedualServiceHi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-feign/src/main/java/fgh/springcloud/SchedualServiceHiHystric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_dashboard_1_3_0_RELEASE.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-zuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client1/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client1/src/main/java/fgh/springcloud/SpringcloudEurekaClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-feign/src/main/java/fgh/springcloud/ServiceFeignApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#433#434#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-zuul/src/main/java/fgh/springcloud/ServiceZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#464#465#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/fgh/springcloud/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#546#547#0" expanded="false" />
+            <element signature="e#598#599#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/fgh/springcloud/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#636#637#0" expanded="false" />
+            <element signature="e#699#700#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/fgh/springcloud/ServiceRibbonApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#704#705#0" expanded="false" />
+            <element signature="e#770#771#0" expanded="false" />
+            <element signature="e#823#824#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-zuul/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-feign/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client2/src/main/java/fgh/springcloud/SpringcloudEurekaClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/fgh.springcloud:config-client:0.0.1-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>fgh.springcloud:config-client:0.0.1-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">fgh.springcloud:config-client:0.0.1-SNAPSHOT</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.cloud:spring-cloud-config-client:jar:1.3.1.RELEASE</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.cloud:spring-cloud-config-client:jar:1.3.1.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.cloud:spring-cloud-config-client:jar:1.3.1.RELEASE/org.springframework.cloud:spring-cloud-commons:jar:1.2.2.RELEASE</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.cloud:spring-cloud-config-client:jar:1.3.1.RELEASE/org.springframework.cloud:spring-cloud-context:jar:1.2.2.RELEASE</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.cloud:spring-cloud-config-client:jar:1.3.1.RELEASE/com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.boot:spring-boot-starter-actuator:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.boot:spring-boot-starter-actuator:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-actuator:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.security:spring-security-crypto:jar:4.2.2.RELEASE</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.security:spring-security-rsa:jar:1.0.3.RELEASE</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.security:spring-security-rsa:jar:1.0.3.RELEASE/org.bouncycastle:bcpkix-jdk15on:jar:1.55</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.springframework.security:spring-security-rsa:jar:1.0.3.RELEASE/org.bouncycastle:bcpkix-jdk15on:jar:1.55/org.bouncycastle:bcprov-jdk15on:jar:1.55</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.eclipse.jgit:org.eclipse.jgit:jar:4.6.0.201612231935-r</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.eclipse.jgit:org.eclipse.jgit:jar:4.6.0.201612231935-r/com.jcraft:jsch:jar:0.1.53</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.eclipse.jgit:org.eclipse.jgit:jar:4.6.0.201612231935-r/com.googlecode.javaewah:JavaEWAH:jar:1.1.6</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.eclipse.jgit:org.eclipse.jgit:jar:4.6.0.201612231935-r/org.apache.httpcomponents:httpclient:jar:4.5.3</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.eclipse.jgit:org.eclipse.jgit:jar:4.6.0.201612231935-r/org.apache.httpcomponents:httpclient:jar:4.5.3/org.apache.httpcomponents:httpcore:jar:4.4.6</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.eclipse.jgit:org.eclipse.jgit:jar:4.6.0.201612231935-r/org.apache.httpcomponents:httpclient:jar:4.5.3/commons-codec:commons-codec:jar:1.10</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.eclipse.jgit:org.eclipse.jgit:jar:4.6.0.201612231935-r/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="" y="">org.springframework.cloud:spring-cloud-config-server:jar:1.3.1.RELEASE/org.yaml:snakeyaml:jar:1.17</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11/ch.qos.logback:logback-core:jar:1.1.11</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.3.RELEASE/org.slf4j:log4j-over-slf4j:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.3.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.14</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.3.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.14</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.3.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.14</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.hibernate:hibernate-validator:jar:5.3.5.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.hibernate:hibernate-validator:jar:5.3.5.Final/javax.validation:validation-api:jar:1.1.0.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.hibernate:hibernate-validator:jar:5.3.5.Final/org.jboss.logging:jboss-logging:jar:3.3.1.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.hibernate:hibernate-validator:jar:5.3.5.Final/com.fasterxml:classmate:jar:1.3.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.8/com.fasterxml.jackson.core:jackson-core:jar:2.8.8</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-web:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-web:jar:4.3.8.RELEASE/org.springframework:spring-aop:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-web:jar:4.3.8.RELEASE/org.springframework:spring-beans:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-web:jar:4.3.8.RELEASE/org.springframework:spring-context:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-webmvc:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:1.5.3.RELEASE/org.springframework:spring-webmvc:jar:4.3.8.RELEASE/org.springframework:spring-expression:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-test:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:1.5.3.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1/net.minidev:accessors-smart:jar:1.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1/net.minidev:accessors-smart:jar:1.1/org.ow2.asm:asm:jar:5.0.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/junit:junit:jar:4.12</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.assertj:assertj-core:jar:2.6.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.mockito:mockito-core:jar:1.10.19</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.mockito:mockito-core:jar:1.10.19/org.objenesis:objenesis:jar:2.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.hamcrest:hamcrest-library:jar:1.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.skyscreamer:jsonassert:jar:1.4.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.skyscreamer:jsonassert:jar:1.4.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.springframework:spring-core:jar:4.3.8.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:1.5.3.RELEASE/org.springframework:spring-test:jar:4.3.8.RELEASE</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.23706324635117204" x="2778.285447761194" y="873.517723880597" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven_repo/repository/com/netflix/eureka/eureka-client/1.6.2/eureka-client-1.6.2.jar!/com/netflix/appinfo/HealthCheckResource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-server/src/test/java/fgh/springcoud/ConfigServerApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-eureka-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-eureka-server/src/main/java/fgh/springcloud/ConfigEurekaServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-server/src/main/java/fgh/springcoud/ConfigServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client/mvnw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="116" column="18" lean-forward="false" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-config/respo/config-client-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client/src/main/java/fgh/springcloud/ConfigClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -643,12 +1771,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>springcloud</last-edited>
+          <last-edited>config-server</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -668,6 +1795,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
